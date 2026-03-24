@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADK Battle Labs — Drone Operations Week 2026</title>
+  <meta name="description" content="ADK Battle Labs Drone Operations Week — June 1-5, 2026 in Lewis, NY. FPV drone racing, tactical drone missions, and defense technology demonstrations in the Adirondacks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">DRONE WARS</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#vendors">Vendors</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle-top">ADK BATTLE LABS PRESENTS</p>
+      <h1 class="hero-title">DRONE WARS<br>2026</h1>
+      <p class="hero-date">JUNE 1–5, 2026 &nbsp;|&nbsp; LEWIS, NY</p>
+      <div class="countdown" id="countdown">
+        <div class="countdown-item">
+          <span class="countdown-value" id="cd-days">---</span>
+          <span class="countdown-label">DAYS</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="cd-hours">--</span>
+          <span class="countdown-label">HOURS</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="cd-mins">--</span>
+          <span class="countdown-label">MINS</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="cd-secs">--</span>
+          <span class="countdown-label">SECS</span>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary">SIGN UP</a>
+      <div class="scroll-indicator">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section mission" id="mission">
+    <div class="container">
+      <div class="mission-grid">
+        <div class="mission-text" data-aos="fade-right">
+          <h2 class="section-heading">OPERATIONAL BRIEFING</h2>
+          <div class="accent-line"></div>
+          <p>ADK Battle Labs hosts a week-long drone operations event that fuses competitive FPV racing with real-world tactical UAS mission scenarios. Set in the Adirondack mountains of northern New York, this is where commercial drone racing meets defense technology.</p>
+          <p>Four distinct events challenge pilots across the full spectrum of drone operations — from high-speed open-class racing to ISR-enabled precision strike missions against static and moving targets.</p>
+          <p>Open to FPV racing teams, defense and tactical UAS operators, counter-UAS vendors, and commercial drone companies. Whether you race, fly missions, or showcase technology — this is your proving ground.</p>
+        </div>
+        <div class="mission-image" data-aos="fade-left">
+          <img src="media/000080560009.jpg" alt="ADK Battle Labs command platform with American flags and Adirondack mountain backdrop" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MIDRT -->
+  <section class="section midrt" id="midrt">
+    <div class="container">
+      <div class="midrt-content" data-aos="fade-up">
+        <p class="midrt-label">IN PARTICIPATION WITH</p>
+        <div class="midrt-logo-wrap">
+          <img src="https://www.midrt.org/assets/logo.png" alt="MIDRT — Military International Drone Racing Tournament" class="midrt-logo">
+        </div>
+        <p class="midrt-tagline">Elite military FPV racing, international camaraderie and STEM innovation.</p>
+        <p class="midrt-desc">MIDRT is the premier military FPV drone racing championship uniting allied nations for competitive aerial racing. The tournament brings together speed, precision, and teamwork in a high-intensity environment — advancing international collaboration in unmanned systems capabilities and fostering STEM education pathways into defense and aviation.</p>
+        <p class="midrt-desc">Drone Wars 2026 is proud to operate in participation with MIDRT, bridging competitive FPV racing with tactical UAS operations in the Adirondacks.</p>
+        <a href="https://www.midrt.org/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">VISIT MIDRT.ORG</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section events" id="events">
+    <div class="container">
+      <h2 class="section-heading center" data-aos="fade-up">OPERATIONS</h2>
+      <div class="accent-line center"></div>
+      <div class="events-grid">
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="event-card-bg" style="background-image: url('media/000080560024.jpg')"></div>
+          <div class="event-card-overlay"></div>
+          <div class="event-card-content">
+            <span class="event-badge">01</span>
+            <h3 class="event-title">Open-Class Drone Racing</h3>
+            <p class="event-desc">Traditional FPV drone racing — all airframe configurations allowed. Open qualifying heats Tuesday and Wednesday, finals and championship race Thursday evening. Fastest cumulative lap times determine seeding through to the championship.</p>
+            <span class="event-schedule">MON Setup &bull; TUE–WED Qualifying &bull; THU Finals</span>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="event-card-bg" style="background-image: url('media/000080530011.jpg')"></div>
+          <div class="event-card-overlay"></div>
+          <div class="event-card-content">
+            <span class="event-badge">02</span>
+            <h3 class="event-title">Aerial Point Defense</h3>
+            <p class="event-desc">Tactical intercept scenario. BLUEFOR FPV team defends a fixed point against a REDFOR fixed-wing asset launching from 3 km out on a disclosed azimuth. Intercept before the target penetrates the 500m defensive perimeter. Successful intercept = cutting the streamer.</p>
+            <span class="event-schedule">TUE–WED &bull; 30-min sign-up slots</span>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="event-card-bg" style="background-image: url('media/000080530022.jpg')"></div>
+          <div class="event-card-overlay"></div>
+          <div class="event-card-content">
+            <span class="event-badge">03</span>
+            <h3 class="event-title">Moving Vehicle Intercept</h3>
+            <p class="event-desc">Dynamic targeting against a ground convoy within a defined AO. Positively ID the HVT and execute a simulated kinetic strike before the convoy exits the area of operations. ISR drones strongly recommended — loaner platforms available for teams without organic ISR.</p>
+            <span class="event-schedule">TUE–WED &bull; 30-min sign-up slots</span>
+          </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="event-card-bg" style="background-image: url('media/000080530019.jpg')"></div>
+          <div class="event-card-overlay"></div>
+          <div class="event-card-content">
+            <span class="event-badge">04</span>
+            <h3 class="event-title">Fixed Infrastructure Long-Range Engagement</h3>
+            <p class="event-desc">Precision strike against a static target at approximately 2 km within VLOS. Scoring based on strike precision and post-strike battle damage assessment. Combined ISR + strike drone operations encouraged.</p>
+            <span class="event-schedule">TUE–WED &bull; 30-min sign-up slots</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="section videos" id="videos">
+    <div class="container">
+      <h2 class="section-heading center" data-aos="fade-up">PAST EVENT COVERAGE</h2>
+      <div class="accent-line center"></div>
+      <div class="videos-grid">
+        <div class="video-wrapper" data-aos="fade-right">
+          <iframe src="https://www.youtube.com/embed/-B-zJJkefqA" title="Drone Wars Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper" data-aos="fade-left">
+          <iframe src="https://www.youtube.com/embed/En-3RF5Y0PI" title="Drone Wars Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="section schedule" id="schedule">
+    <div class="schedule-bg" style="background-image: url('media/000080560030.jpg')"></div>
+    <div class="schedule-overlay"></div>
+    <div class="container">
+      <h2 class="section-heading center" data-aos="fade-up">OPERATIONS TIMELINE</h2>
+      <div class="accent-line center"></div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-day">MONDAY <span>JUNE 1</span></h3>
+            <ul>
+              <li>Arrival and team check-in</li>
+              <li>Equipment and safety inspection</li>
+              <li>Mandatory safety orientation &amp; RSO briefing</li>
+              <li>Frequency coordination — VTX and control link registration</li>
+              <li>Race course configuration</li>
+              <li>Open practice flights</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-day">TUESDAY <span>JUNE 2</span></h3>
+            <ul>
+              <li>Open-class drone racing qualifying heats begin</li>
+              <li>Tactical events open — 30-min sign-up slots all day</li>
+              <li>Aerial Point Defense engagements</li>
+              <li>Moving Vehicle Intercept missions</li>
+              <li>Fixed Infrastructure Long-Range Engagement windows</li>
+              <li>C-UAS vendor detection operations active</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-day">WEDNESDAY <span>JUNE 3</span></h3>
+            <ul>
+              <li>Qualifying heats continue</li>
+              <li>Tactical event time slots continue all day</li>
+              <li>Vendor demonstrations on main course</li>
+              <li>C-UAS detection operations continue</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-day">THURSDAY <span>JUNE 4</span></h3>
+            <ul>
+              <li>AM — Warmups and final practice</li>
+              <li>PM — Racing finals and championship race</li>
+              <li>Evening — Awards and results</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-day">FRIDAY <span>JUNE 5</span></h3>
+            <ul>
+              <li>Teardown and site cleanup</li>
+              <li>Equipment pack-out</li>
+              <li>Departures and closeout</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VENDORS -->
+  <section class="section vendors" id="vendors">
+    <div class="container">
+      <h2 class="section-heading center" data-aos="fade-up">VENDOR EXHIBITION</h2>
+      <div class="accent-line center"></div>
+      <div class="vendors-grid">
+        <div class="vendors-text" data-aos="fade-right">
+          <p>Drone Wars 2026 puts your products in front of the operators, engineers, and decision-makers shaping the future of unmanned systems. With a full week of live flight operations, your technology gets real-world visibility — not a conference hall demo.</p>
+          <div class="vendor-features">
+            <div class="vendor-feature">
+              <h4>On-Site Booth Space</h4>
+              <p>Dedicated booth slots available all week. Set up shop alongside the action and engage directly with FPV pilots, tactical UAS operators, and defense technology professionals.</p>
+            </div>
+            <div class="vendor-feature">
+              <h4>Live Demo Time Slots</h4>
+              <p>Reserved demonstration windows on the main course. Fly your platforms, showcase your software, or run your hardware in front of a captive, technical audience.</p>
+            </div>
+            <div class="vendor-feature">
+              <h4>Field Your Own Team</h4>
+              <p>Non-military and commercial vendors are encouraged to enter teams in both racing and tactical events. Nothing sells a product like winning with it.</p>
+            </div>
+          </div>
+          <div class="vendor-cta">
+            <p>Secure your vendor slot for Drone Wars 2026</p>
+            <a href="#contact" class="btn btn-primary">RESERVE A BOOTH</a>
+          </div>
+        </div>
+        <div class="vendors-image" data-aos="fade-left">
+          <img src="media/000080560007.jpg" alt="Military and civilian participants gathered at ADK Battle Labs vendor area" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- C-UAS -->
+  <section class="section cuas" id="cuas">
+    <div class="container">
+      <h2 class="section-heading center" data-aos="fade-up">COUNTER-UAS OPERATIONS</h2>
+      <div class="accent-line center"></div>
+      <div class="cuas-content" data-aos="fade-up">
+        <div class="cuas-text">
+          <p>Drone Wars 2026 offers a unique opportunity for counter-UAS technology companies to test and validate detection and tracking systems against real, unscripted drone operations across four distinct mission profiles — from high-speed FPV racing to long-range ISR sorties.</p>
+          <div class="cuas-details-grid">
+            <div class="cuas-detail">
+              <h4>Live Flight Environment</h4>
+              <p>Deploy your equipment during all flight sorties across all four events. Hundreds of flights over five days — real targets, real RF signatures, real operational conditions in complex Adirondack terrain.</p>
+            </div>
+            <div class="cuas-detail">
+              <h4>Diverse Target Set</h4>
+              <p>Track everything from sub-250g racing quads to long-range fixed-wing platforms operating across multiple frequency bands, flight profiles, and mission types.</p>
+            </div>
+            <div class="cuas-detail">
+              <h4>Detect &amp; Track Only</h4>
+              <p>C-UAS participation is restricted to <strong>passive detection and tracking</strong>. No active countermeasures — no jamming, spoofing, or kinetic defeat systems. This ensures a safe operating environment while giving your sensors the workout they need.</p>
+            </div>
+          </div>
+          <div class="vendor-cta">
+            <p>Bring your C-UAS systems to the proving ground</p>
+            <a href="#contact" class="btn btn-outline">GET IN TOUCH</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPONSORSHIP -->
+  <section class="section sponsors" id="sponsors">
+    <div class="container">
+      <h2 class="section-heading center" data-aos="fade-up">BECOME A SPONSOR</h2>
+      <div class="accent-line center"></div>
+      <p class="sponsors-intro" data-aos="fade-up">Drone Wars 2026 is seeking sponsors who want to align their brand with the cutting edge of unmanned systems, defense technology, and competitive drone operations. This is a high-visibility event drawing FPV racing teams, military and defense operators, C-UAS companies, and commercial drone innovators to the Adirondacks for five days of live flight operations.</p>
+
+      <div class="sponsor-tiers">
+
+        <div class="sponsor-tier tier-gold" data-aos="fade-up" data-aos-delay="0">
+          <div class="tier-header">
+            <h3>TITLE SPONSOR</h3>
+          </div>
+          <ul>
+            <li>Top billing across all event signage and media</li>
+            <li><strong>All racing gates branded with your logo and colors</strong></li>
+            <li>Logo on all printed and digital materials</li>
+            <li>Dedicated banner placement on the race course</li>
+            <li>Premium booth location with prime foot traffic</li>
+            <li>Live demo time slot on the main course</li>
+            <li>PA and livestream mentions throughout the event</li>
+            <li>Featured in all post-event coverage and recap media</li>
+          </ul>
+        </div>
+
+        <div class="sponsor-tier tier-tactical" data-aos="fade-up" data-aos-delay="100">
+          <div class="tier-header">
+            <h3>TACTICAL EVENT SPONSOR</h3>
+          </div>
+          <ul>
+            <li><strong>Brand one of the three tactical events</strong> — Aerial Point Defense, Moving Vehicle Intercept, or Long-Range Engagement</li>
+            <li>Your company name on the event (e.g., "The [Your Brand] Moving Vehicle Intercept")</li>
+            <li>Preferred media coverage of your sponsored event</li>
+            <li>Ideal for fixed-wing providers, ISR platform companies, and tactical UAS manufacturers</li>
+            <li>Banner and signage at your event's staging and operations area</li>
+            <li>Booth space on-site for the full week</li>
+            <li>PA and livestream callouts during your sponsored event's sorties</li>
+            <li>Featured in all recap media with emphasis on your event's coverage</li>
+          </ul>
+        </div>
+
+        <div class="sponsor-tier tier-silver" data-aos="fade-up" data-aos-delay="200">
+          <div class="tier-header">
+            <h3>SUPPORTING SPONSOR</h3>
+          </div>
+          <ul>
+            <li>Logo on event signage and digital materials</li>
+            <li>Banner placement at the venue</li>
+            <li>Booth space on-site for the full week</li>
+            <li>PA mentions during key event moments</li>
+            <li>Included in post-event recap coverage</li>
+          </ul>
+        </div>
+
+        <div class="sponsor-tier tier-bronze" data-aos="fade-up" data-aos-delay="300">
+          <div class="tier-header">
+            <h3>EVENT PARTNER</h3>
+          </div>
+          <ul>
+            <li>Logo on event website and select printed materials</li>
+            <li>Recognition during event opening and closing ceremonies</li>
+            <li>Included in post-event media and social coverage</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="sponsor-why" data-aos="fade-up">
+        <h3>WHY SPONSOR DRONE WARS?</h3>
+        <div class="sponsor-why-grid">
+          <div class="sponsor-why-item">
+            <h4>Targeted Audience</h4>
+            <p>Your brand in front of UAS operators, defense engineers, military personnel, and technology decision-makers — the people who buy, build, and fly.</p>
+          </div>
+          <div class="sponsor-why-item">
+            <h4>Live Operational Visibility</h4>
+            <p>Not a trade show floor — this is a live flight environment. Your brand is seen during real missions, real races, and real engagements.</p>
+          </div>
+          <div class="sponsor-why-item">
+            <h4>Media Coverage</h4>
+            <p>Event photography, video recaps, and social media reach extend your brand well beyond the week itself. Sponsors are featured in all post-event content.</p>
+          </div>
+          <div class="sponsor-why-item">
+            <h4>Community Alignment</h4>
+            <p>Position your brand alongside the growing intersection of commercial drone racing and defense UAS innovation — a space that's only getting bigger.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-cta" data-aos="fade-up">
+        <p>Ready to put your brand on the flight line?</p>
+        <a href="#contact" class="btn btn-primary">BECOME A SPONSOR</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUIREMENTS -->
+  <section class="section requirements" id="requirements">
+    <div class="container">
+      <h2 class="section-heading center" data-aos="fade-up">PARTICIPANT REQUIREMENTS</h2>
+      <div class="accent-line center"></div>
+      <div class="requirements-grid" data-aos="fade-up">
+
+        <div class="req-item">
+          <div class="req-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <h4>Own Equipment</h4>
+            <p>Teams responsible for UAS platforms, batteries, chargers, and support equipment. ISR loaners available for Events 3 and 4.</p>
+          </div>
+        </div>
+
+        <div class="req-item">
+          <div class="req-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div>
+            <h4>Safety Inspection</h4>
+            <p>All aircraft must pass pre-flight safety inspection during Monday check-in.</p>
+          </div>
+        </div>
+
+        <div class="req-item">
+          <div class="req-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>Liability Waiver</h4>
+            <p>Signed liability waiver and assumption-of-risk acknowledgment required.</p>
+          </div>
+        </div>
+
+        <div class="req-item">
+          <div class="req-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5.636 18.364a9 9 0 010-12.728"/><path d="M8.464 15.536a5 5 0 010-7.072"/><circle cx="12" cy="12" r="1"/><path d="M15.536 8.464a5 5 0 010 7.072"/><path d="M18.364 5.636a9 9 0 010 12.728"/></svg>
+          </div>
+          <div>
+            <h4>Frequency Coordination</h4>
+            <p>All VTX and control link frequencies must be registered at check-in.</p>
+          </div>
+        </div>
+
+        <div class="req-item">
+          <div class="req-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h8"/></svg>
+          </div>
+          <div>
+            <h4>CONOPS Briefing</h4>
+            <p>Tactical event teams (Events 2, 3, 4) must brief their concept of operations before each engagement window.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="download-cta" data-aos="fade-up">
+        <p>Download the full event one-pager for complete details:</p>
+        <a href="#" class="btn btn-primary" id="downloadBtn">DOWNLOAD ONE-PAGER (PDF)</a>
+        <p class="download-note">Document will be available soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content" data-aos="fade-up">
+        <h2 class="section-heading center">ESTABLISH COMMS</h2>
+        <div class="accent-line center"></div>
+        <p class="footer-location">ADK Battle Labs &nbsp;&bull;&nbsp; Lewis, NY &nbsp;&bull;&nbsp; Adirondack Region, Northern New York</p>
+        <div class="footer-links">
+          <a href="mailto:contact@adkbattlelabs.com" class="footer-email">contact@adkbattlelabs.com</a>
+          <span class="footer-divider">&bull;</span>
+          <a href="https://www.midrt.org/" target="_blank" rel="noopener noreferrer" class="footer-partner">MIDRT.org</a>
+        </div>
+        <p class="footer-note">Registration details, entry fees, and additional logistics information coming soon.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ADK Battle Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
