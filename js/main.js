@@ -69,6 +69,39 @@ AOS.init({
   });
 })();
 
+// Video lightbox
+(function () {
+  var lightbox = document.getElementById('videoLightbox');
+  var iframe = document.getElementById('lightboxIframe');
+  var backdrop = lightbox.querySelector('.video-lightbox-backdrop');
+  var closeBtn = lightbox.querySelector('.video-lightbox-close');
+
+  function open(src) {
+    iframe.src = src + '?autoplay=1';
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lightbox.classList.remove('active');
+    iframe.src = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.event-card-play').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      open(this.getAttribute('data-video'));
+    });
+  });
+
+  closeBtn.addEventListener('click', close);
+  backdrop.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) close();
+  });
+})();
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener('click', function (e) {
